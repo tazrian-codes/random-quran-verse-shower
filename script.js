@@ -6,8 +6,8 @@ const totalVerses = 6236;
 
 // alquran.cloud api
 const apiFetch = () => {
-  const randomVerse = Math.floor(Math.random() * (totalVerses+1));
-  const url = `http://api.alquran.cloud/v1/ayah/${randomVerse}/en.sahih`;
+  const randomVerse = Math.floor(Math.random() * totalVerses)+1;
+  const url = `https://api.alquran.cloud/v1/ayah/${randomVerse}/en.sahih`;
   fetch(url).then(
     response => response.json()
   ).then(data => {
