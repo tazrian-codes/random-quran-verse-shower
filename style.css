@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', monospace;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background-image: url(src/images/pexels-esh3rwey-6109471.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 20px 25px;
+width: 80%;
+text-align: center;
+}
+
+#verse{
+  font-size: 25px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Inter';
+}
+
+#verse-no{
+  color: rgb(230, 237, 235);
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(230, 237, 235);
+  display: inline-block;
+}
+
+#show{
+  border: 0;
+  outline: 0;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.1s;
+  display: block;
+  margin: 15px auto 5px;
+}
+
+#show:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 360px) and (max-width: 440px){
+
+  #verse{
+    font-size: 20px;
+  }
+
+  #verse-no{
+    font-size: 13px;
+  }
+}
