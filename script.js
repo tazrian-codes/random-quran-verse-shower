@@ -8,7 +8,6 @@ const totalVerses = 6236;
 const apiFetch = () => {
   const randomVerse = Math.floor(Math.random() * totalVerses)+1;
   const url = `https://api.alquran.cloud/v1/ayah/${randomVerse}/en.sahih`;
-  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
 
   fetch(url).then(
     response => response.json()
