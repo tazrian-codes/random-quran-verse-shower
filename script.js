@@ -13,7 +13,7 @@ const apiFetch = () => {
     response => response.json()
   ).then(data => {
     verse.textContent = '"' + data.data.text + '"';
-    verseNum.textContent = 'Al-Quran ' + '[' + data.data.numberInSurah +':'+data.data.surah.number + ']';
+    verseNum.textContent = 'Al-Quran ' + '[' + data.data.surah.number +':'+ data.data.numberInSurah + ']';
   })
 };
 
