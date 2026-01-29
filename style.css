@@ -10,8 +10,9 @@ html, body{
 }
 
 body{
-  background-image: url(src/images/pexels-esh3rwey-6109471.jpg);
+  background-image: url(src/images/pexels-saad-alkot-419901137-27628044.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -20,20 +21,20 @@ body{
 
 .container{
 /* From https://css.glass */
-background: rgba(255, 255, 255, 0.3);
+background: rgba(57, 56, 56, 0.24);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(7.1px);
--webkit-backdrop-filter: blur(7.1px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+border: 1px solid rgba(57, 56, 56, 0.26);
 padding: 20px 25px;
 width: 80%;
+max-width: 600px;
 text-align: center;
 }
 
 #verse{
   font-size: 25px;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
   color: white;
   text-align: center;
@@ -50,9 +51,10 @@ text-align: center;
 #show{
   border: 0;
   outline: 0;
-  padding: 8px 10px;
+  padding: 10px 13px;
   border-radius: 5px;
   font-weight: 600;
+  font-size: 15px;
   background-color: black;
   color: white;
   cursor: pointer;
@@ -68,6 +70,20 @@ text-align: center;
 }
 
 @media (min-width: 360px) and (max-width: 440px){
+
+  body{
+  background-image: url(src/images/pexels-esh3rwey-6109471.jpg);
+  }
+
+  .container{
+    /* From https://css.glass */
+background: rgba(194, 186, 186, 0.24);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9px);
+-webkit-backdrop-filter: blur(9px);
+border: 1px solid rgba(194, 186, 186, 0.26);
+  }
 
   #verse{
     font-size: 20px;
